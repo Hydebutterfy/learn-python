@@ -37,6 +37,7 @@ def main():
 
     # Get the list of recerals necessary to sort the given permutation.
     reversal_list = greedy_sorting(list(perm))
+    print(reversal_list)
 
     # Write the permutation in the desired form for in the desired output form for stepic.
     reversal_list = ['('+' '.join([['', '+'][value > 0] + str(value) for value in perm])+')' for perm in reversal_list]
